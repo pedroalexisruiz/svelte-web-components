@@ -8,10 +8,13 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "node-sass": "^4.13.0",
     "rollup": "^1.11.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-svelte": "^5.0.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^3.2.6"
   },
   "keywords": [
     "svelte"

@@ -13,6 +13,17 @@
   }
 </script>
 
+<style lang="scss">
+  @import "./styles.scss";
+  .titulo {
+    width: $ancho;
+    height: $largo;
+    color: black;
+    border: solid;
+    vertical-align: center;
+  }
+</style>
+
 <svelte:options tag="my-component" />
-<h1>Hola mi nombre es {name}</h1>
+<h1 class="titulo">Hola mi nombre es {name}</h1>
 <input type="text" bind:value={name} on:keyup={notifiesNameChange} />
