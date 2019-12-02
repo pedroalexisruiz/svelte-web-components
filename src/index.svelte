@@ -1,5 +1,5 @@
-<script>
-  export let name = "";
+<script lang="ts">
+  export let name: string = "";
 
   function notifiesNameChange() {
     const event = new CustomEvent("name-changed", {

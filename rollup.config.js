@@ -3,6 +3,8 @@ import resolve from 'rollup-plugin-node-resolve';
 import sveltePreprocess from 'svelte-preprocess';
 import pkg from './package.json';
 import { terser } from 'rollup-plugin-terser';
+import typescript from "rollup-plugin-typescript2";
+import typescriptCompiler from "typescript";
 
 const preprocess = sveltePreprocess({
   scss: {
@@ -23,5 +25,10 @@ export default {
     { file: pkg.module, format: 'es' },
     { file: pkg.main, format: 'umd', name }
   ],
-  plugins: [terser(), svelte({ customElement: true, preprocess }), resolve()]
+  plugins: [
+    terser(),
+    svelte({ customElement: true, preprocess }),
+    typescript({ typescript: typescriptCompiler }),
+    resolve()
+  ]
 };
