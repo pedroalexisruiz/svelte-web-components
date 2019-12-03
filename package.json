@@ -1,5 +1,5 @@
 {
-  "name": "my-comopnent",
+  "name": "wc-base",
   "svelte": "src/index.svelte",
   "module": "index.mjs",
   "main": "index.js",

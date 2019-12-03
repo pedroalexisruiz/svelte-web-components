@@ -3,9 +3,9 @@
   export let tenant: string = "";
 
   if (loading) {
-    this.renderer.setStyle(document.body, "overflow", "hidden");
+    document.body.style.overflow = "hidden";
   } else {
-    this.renderer.removeStyle(document.body, "overflow");
+    document.body.style.overflow = null;
   }
 </script>
 
