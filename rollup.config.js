@@ -14,6 +14,13 @@ const preprocess = sveltePreprocess({
   },
 });
 
+const plugins = [
+  terser(),
+  svelte({ customElement: true, preprocess }),
+  typescript({ typescript: typescriptCompiler }),
+  resolve(),
+];
+
 export default [
   {
     input: 'src/sura-loading/index.svelte',
@@ -25,11 +32,6 @@ export default [
         name: 'bundle-sura-loading.js',
       },
     ],
-    plugins: [
-      terser(),
-      svelte({ customElement: true, preprocess }),
-      typescript({ typescript: typescriptCompiler }),
-      resolve(),
-    ],
+    plugins,
   },
 ];
