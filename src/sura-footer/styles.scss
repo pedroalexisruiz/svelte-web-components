@@ -1,0 +1,19 @@
+.footer-container {
+  background: var(--quarter);
+  z-index: 1029;
+  &__text {
+    font-size: 12px;
+    color: var(--footer-color);
+  }
+  &_border-right {
+    @media (min-width: 960px) {
+      border-right: 1px solid #fff;
+    }
+  }
+  &__columns {
+    position: static;
+    @media (min-width: 960px) {
+      position: relative;
+    }
+  }
+}

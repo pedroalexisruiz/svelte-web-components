@@ -1,0 +1,8 @@
+@import './inheritance';
+
+/* Flexbox */
+.sura-lib-d-f { @extend %display-flex; }
+.sura-lib-f-align-i-center { @extend %flex-align-items-center; }
+.sura-lib-f-align-i-s-beetwen { @extend %flex-justify-content-space-between; }
+.sura-lib-f-justify-c-center { @extend %flex-justify-content-center; }
+.sura-lib-f-d-column { @extend %flex-direction-column; }

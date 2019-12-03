@@ -1,0 +1,66 @@
+@import './mixins';
+
+/* Sizes */
+/* 
+  *rem values are relative to the root html (Rem: 16px = 1rem)
+  1: .25rem;
+  2: .5rem;
+  3: 1rem;
+  4: 1.5rem;
+  5: 3rem;
+*/
+
+/* Positions */
+.sura-lib-p-absolute { position: absolute; }
+.sura-lib-p-relative { position: relative; }
+
+
+/* Displays */
+.sura-lib-d-none { display: none; }
+
+
+/* Aligns */
+.sura-lib-text-center { text-align: center; }
+
+
+/* Sizes (width - height) */
+.sura-lib-w-100 { width: 100%; }
+
+
+/* All */
+.sura-lib-pointer-none { pointer-events: none; }
+
+
+/* Margins */
+// Top
+.sura-lib-mt-0 { @include mt(0); }
+.sura-lib-mt-2 { @include mt(.5rem); }
+// Bottom
+.sura-lib-mb-0 { @include mb(0); }
+.sura-lib-mb-1 { @include mb(.25rem); }
+.sura-lib-mb-2 { @include mb(.5rem); }
+.sura-lib-mb-3 { @include mb(1rem); }
+.sura-lib-mb-4 { @include mb(1.5rem); }
+// Left
+.sura-lib-ml-0 { @include ml(0); }
+.sura-lib-ml-1 { @include ml(.25rem); }
+// Left-Right
+.sura-lib-mx-2 { @include mx(.5rem); }
+
+/* Paddings */
+// Bottom
+.sura-lib-pb-1 { @include pb(.25rem); }
+.sura-lib-pb-2 { @include pb(.5rem); }
+.sura-lib-pb-3 { @include pb(1rem); }
+.sura-lib-pb-4 { @include pb(1.5rem); }
+// Top-Bottom
+.sura-lib-py-1 { @include py(.25rem); }
+.sura-lib-py-2 { @include py(.5rem); }
+.sura-lib-py-3 { @include py(1rem); }
+// Left-Right
+.sura-lib-px-1 { @include px(.25rem); }
+.sura-lib-px-2 { @include px(.5rem); }
+.sura-lib-px-3 { @include px(1rem); }
+.sura-lib-px-4 { @include px(1.5rem); }
+.sura-lib-px-5 { @include px(3rem); }
+

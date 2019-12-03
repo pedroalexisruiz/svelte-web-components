@@ -1,0 +1,37 @@
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+/* Mixins for paddings */
+@mixin pt($property) { padding-top: $property; }
+@mixin pr($property) { padding-right: $property; }
+@mixin pb($property) { padding-bottom: $property; }
+@mixin pl($property) { padding-left: $property; }
+@mixin py($property) {
+  padding-top: $property;
+  padding-bottom: $property;
+}
+@mixin px($property) {
+  padding-right: $property;
+  padding-left: $property;
+}
+
+/* Mixins for margins */
+@mixin mt($property) { margin-top: $property; }
+@mixin mb($property) { margin-bottom: $property; }
+@mixin ml($property) { margin-left: $property; }
+@mixin my($property) {
+  margin-top: $property;
+  margin-bottom: $property;
+}
+@mixin mx($property) {
+  margin-right: $property;
+  margin-left: $property;
+}

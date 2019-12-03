@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <script src="dist/bundle-sura-loading.js" type="module"></script>
-  </head>
-  <body>
-    <sura-loading tenant="sura" loading={{true}}></sura-loading>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <script src="dist/sura-loading/bundle-sura-loading.js" type="module"></script>
+  <script src="dist/sura-footer/bundle-sura-footer.js" type="module"></script>
+  <script src="dist/sura-header/bundle-sura-header.js" type="module"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <style>
+    body {
+      --quarter: blue;
+      --footer-color: white;
+      --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <sura-header size="1140 px">
+    <a slot="logo" class="navbar-brand align-self-end p-0 m-0">
+      <figure class="my-lg-2">
+        <img src="https://www.segurossura.com.co/images/logo-sura.svg" alt="Logo Sura en Línea" class="logo">
+      </figure>
+    </a>
+    <div slot="menu" class="d-flex align-items-center">
+      <ul class="d-flex menu m-0 px-3">
+        <li class="px-3 menu__item active">Inicio</li>
+        <li class="px-3 menu__item">Cómo utilizarlo</li>
+        <li class="px-3 menu__item">Qué monto
+          asegurar</li>
+        <li class="px-3 menu__item">Ayuda</li>
+      </ul>
+      <button class="btn btn-secondary">
+        COTIZAR
+      </button>
+    </div>
+  </sura-header>
+  <!-- <sura-loading tenant="sura" loading={{true}}></sura-loading> -->
+  <sura-footer logo="logo-comodo-secure.png"></sura-footer>
+</body>
+
 </html>

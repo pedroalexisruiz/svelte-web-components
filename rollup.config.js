@@ -26,11 +26,33 @@ export default [
     input: 'src/sura-loading/index.svelte',
     output: [
       {
-        file: 'dist/bundle-sura-loading.js',
+        file: 'dist/sura-loading/bundle-sura-loading.js',
         format: 'umd',
         name: 'bundle-sura-loading.js',
       },
     ],
     plugins,
   },
+  {
+    input: 'src/sura-footer/index.svelte',
+    output: [
+      {
+        file: 'dist/sura-footer/bundle-sura-footer.js',
+        format: 'umd',
+        name: 'bundle-sura-footer.js',
+      },
+    ],
+    plugins,
+  },
+  {
+    input: 'src/sura-header/index.svelte',
+    output: [
+      {
+        file: 'dist/sura-header/bundle-sura-header.js',
+        format: 'umd',
+        name: 'bundle-sura-header.js',
+      },
+    ],
+    plugins,
+  }
 ];
