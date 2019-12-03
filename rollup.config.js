@@ -25,7 +25,6 @@ export default [
   {
     input: 'src/sura-loading/index.svelte',
     output: [
-      { file: 'dist/bundle-sura-loading.mjs', format: 'es' },
       {
         file: 'dist/bundle-sura-loading.js',
         format: 'umd',
